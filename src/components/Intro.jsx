@@ -5,6 +5,7 @@ export default function Intro({ onClose }) {
   const [open, setOpen] = useState(true);
   const [timeLeft, setTimeLeft] = useState({ d: 0, h: 0, m: 0, s: 0 });
 
+  // countdown
   useEffect(() => {
     const target = new Date("2025-09-30T23:59:59").getTime();
 
@@ -28,6 +29,15 @@ export default function Intro({ onClose }) {
 
     return () => clearInterval(timer);
   }, []);
+
+  const handleClose = () => {
+    setOpen(false);
+    // kasih delay biar animasi keluar dulu
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" }); // scroll ke atas
+      onClose && onClose();
+    }, 800);
+  };
 
   return (
     <AnimatePresence>
@@ -68,12 +78,9 @@ export default function Intro({ onClose }) {
               })}
             </div>
 
-            {/* Button with smooth transition */}
+            {/* Button */}
             <motion.button
-              onClick={() => {
-                setOpen(false);
-                setTimeout(() => onClose(), 800); // kasih waktu exit animasi
-              }}
+              onClick={handleClose}
               whileTap={{ scale: 0.9 }}
               className="mt-6 inline-block bg-[#f5e6d3] text-[#6b4226] font-semibold px-6 py-3 rounded-full shadow hover:bg-[#6b4226] hover:text-white transition"
             >

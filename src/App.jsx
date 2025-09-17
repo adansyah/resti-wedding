@@ -22,15 +22,22 @@ function App() {
 
   return (
     <div className="bg-[#fdfcf7] text-gray-700">
-      <Navbar />
-      {introOpen && <Intro onClose={() => setIntroOpen(false)} />}
-      <Home />
-      <Info />
-      <Gallery />
-      <RSVP />
-      <Gifts />
-      <Footer />
-      <MusicButton />
+      {introOpen ? (
+        // tampilkan Intro dulu
+        <Intro onClose={() => setIntroOpen(false)} />
+      ) : (
+        // kalau sudah ditutup, render isi halaman
+        <>
+          <Navbar />
+          <Home />
+          <Info />
+          <Gallery />
+          <RSVP />
+          <Gifts />
+          <Footer />
+          <MusicButton />
+        </>
+      )}
     </div>
   );
 }
