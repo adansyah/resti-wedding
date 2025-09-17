@@ -38,6 +38,7 @@ function App() {
           <MusicButton />
         </>
       )}
+      <MusicButton />
     </div>
   );
 }
