@@ -7,7 +7,7 @@ export default function Intro({ onClose }) {
 
   // countdown
   useEffect(() => {
-    const target = new Date("2025-09-30T23:59:59").getTime();
+    const target = new Date("2025-10-25T11:00:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -57,7 +57,7 @@ export default function Intro({ onClose }) {
             <h4 className="text-lg mb-2">
               Kepada <span className="font-semibold">Bapak/Ibu/Saudara/i,</span>
             </h4>
-            <h1 className="font-sacramento text-6xl md:text-7xl">& Resti</h1>
+            <h1 className="font-sacramento text-6xl md:text-7xl">Ari & Resti </h1>
             <p className="mt-3 text-sm md:text-base">
               Akan melangsungkan pernikahan dalam:
             </p>

@@ -35,7 +35,7 @@ export default function Gifts() {
               Nomor Rekening
             </p>
             <p className="mt-2 text-xl md:text-2xl font-mono font-semibold select-all break-all">
-              3791 5273 15
+              810 5627 021
             </p>
           </div>
 
@@ -43,7 +43,7 @@ export default function Gifts() {
           <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <div className="text-left">
               <p className="text-xs text-[#f5e6d3]/90">Atas nama</p>
-              <p className="text-sm font-semibold">Resti</p>
+              <p className="text-sm font-semibold">ARI MUHAMMAD WILDAN</p>
             </div>
             <button
               onClick={handleCopy}

@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-[#f6f2eb]/90 backdrop-blur shadow z-40">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
-        <a href="#" className="font-sacramento text-3xl text-[#6b4226]">E&A</a>
+        <a href="#" className="font-sacramento text-3xl text-[#6b4226]">A&R</a>
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-[#6b4226] text-2xl"
