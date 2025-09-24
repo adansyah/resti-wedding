@@ -58,7 +58,7 @@ export default function Intro({ onClose }) {
               Kepada <span className="font-semibold">Bapak/Ibu/Saudara/i</span>
             </h4>
             <h1 className="font-sacramento text-6xl md:text-7xl text-[#f5e6d3] drop-shadow-lg">
-              Ari & Resti 💍
+              Rere & Ari 💍
             </h1>
             <p className="mt-3 text-sm md:text-base text-gray-200">
               Akan melangsungkan pernikahan dalam:

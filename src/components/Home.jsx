@@ -25,7 +25,7 @@ export default function Home() {
               Ari Muhammad Wildan
             </p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Putra dari <br />
+              Putra ke 1 dari <br />
               Bapak. Agus Nurzaman <br />
               Ibu. Elis Dini Haryati
             </p>
@@ -33,12 +33,12 @@ export default function Home() {
 
           <div className="backdrop-blur-md bg-white/60 border border-white/40 rounded-3xl shadow-lg p-6">
             <p className="text-xl font-bold text-[#2d1b0d] mb-2">
-              Resti Agustina
+              Resti Agustina (Rere)
             </p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Putri dari <br />
+              Putri ke 1 dari <br />
               Bapak. H. Undang Hidayat <br />
-              Ibu. Teni Mulyati
+              Ibu. Teni Mulyanti
             </p>
           </div>
         </div>
